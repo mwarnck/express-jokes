@@ -1,0 +1,24 @@
+GET http://localhost:3333/people/
+
+###
+GET http://localhost:3333/people/
+
+###
+POST http://localhost:3333/people/
+Content-Type: application/json
+
+{
+"name": "Jane Doe",
+"email": "JaneDoe@mail.com"
+}
+
+###
+PATCH http://localhost:3333/people/6217aa47ef6399b2e5d80dc7
+Content-Type: application/json
+
+{
+  "name": "This is a changed name"
+}
+
+###
+DELETE http://localhost:3333/people/

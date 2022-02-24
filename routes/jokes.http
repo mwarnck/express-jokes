@@ -1,0 +1,24 @@
+GET http://localhost:3333/jokes/
+###
+GET http://localhost:3333/jokes/62177233660462bba2780704
+###
+POST http://localhost:3333/jokes/
+Content-Type: application/json
+
+{
+"text": "New joke funny as hell from Jane Doe",
+"author": "6217aa47ef6399b2e5d80dc7"
+}
+
+###
+PATCH http://localhost:3333/jokes/62179c5e733230141f39ca67
+Content-Type: application/json
+
+{
+  "text": "This is a changed joke"
+}
+
+###
+DELETE http://localhost:3333/jokes/62179c5e733230141f39ca67
+
+
